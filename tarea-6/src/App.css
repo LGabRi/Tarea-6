@@ -104,6 +104,89 @@ h3 {
   text-align: center;
 }
 
+.pasatiempos, .pasatiempos2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.pasatiempos2 {
+  grid-template-columns: 1fr 1fr;
+}
+.pasatiempo, .pasatiempo2, .pasatiempo2img {
+  border: 3px solid var(--primary); 
+  padding: 20px;
+}
+
+.pasatiempo img, .pasatiempo2 img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+.pasatiempo2img {
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  grid-column:  1 / -1;
+  grid-row: 1;
+}
+
+.pasatiempo2img img{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.lectura {
+  width: 700px;
+  height: 280px;
+  margin-top: 50px !important;
+}
+
+.parque {
+  margin-top: 30px !important;
+}
+
+.gym{
+  width: 350px !important;
+  height: 200px !important;
+  margin-top: 40px !important;
+}
+
+.uc {
+  width: 700px;
+  height: 280px;
+  margin-top: 50px !important;
+}
+.mac {
+  width: 300px;
+  height: 180px;
+  margin-top: 50px !important;
+}
+
+.pasatiempo h3, .pasatiempo2 h3{
+  color: var(--black);
+  text-align: center;
+  font-weight: normal;
+  font-weight: bold; 
+  font-size: 24px; 
+  margin-bottom: 20px;
+}
+
+.pasatiempo h4, .pasatiempo2 h4{
+  text-align: center;
+  font-size: 18px; 
+  margin-top: 0; 
+}
+
+.footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   .hero {
       background-repeat: no-repeat;
@@ -111,4 +194,44 @@ h3 {
       height: 450px;
       margin-bottom: 20px;
   }
+  .body {
+      margin: 0;
+      padding: 0;
+    }
+  .content {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+
+  .primary-nav {
+      flex-direction: column;
+      margin: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto;
+    align-items: center;
+  }
+      
+  .image-text {
+      top: 40px;
+      left: 50%;
+      padding: 15px 25px;
+      font-size: 10px;
+  }
+
+  .pasatiempos {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .pasatiempo img {
+      margin-bottom: 10px;
+  }
 }
+

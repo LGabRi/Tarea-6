@@ -9,7 +9,7 @@ function Nosotros(){
                 <div className="card-body">
                 <h5 className="card-title">Sobre Gabriel</h5>
                 <p className="card-text">Conoce un poco mas sobre Gabriel, uno de los integrantes del Dream Team</p>
-                <a href="#pasatiempos" className="btn btn-primary">Conócelo!</a>
+                <a href="#gabriel" className="btn btn-primary">Conócelo!</a>
                 </div>
             </section>
             
@@ -26,7 +26,7 @@ function Nosotros(){
                 <div className="card-body">
                 <h5 className="card-title">Sobre Benjamín</h5>
                 <p className="card-text">Conoce un poco mas sobre Benjamín, uno de los integrantes del Dream Team</p>
-                <a href="#contacto" className="btn btn-primary">Conócelo!</a>
+                <a href="#benjaja" className="btn btn-primary">Conócelo!</a>
                 </div>
             </section>
         </div>
