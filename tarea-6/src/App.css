@@ -1,38 +1,116 @@
-.App {
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary: #BFAA8C;
+  --secondary: #7bc62d;
+  --gray: #9e9e9e;
+  --primaryfont: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--primaryfont);
+  background: rgba(226, 226, 226, 0.5);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.full {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button:hover {
+  background-color: var(--secondary);
+}
+
+.title1, 
+.title {
+  color: var(--black);
+  text-align: center;
+  font-weight: 700;
+  font-family: var(--primaryfont);
+  padding: 20px;
+}
+
+.title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: var(--primary);
+  padding: 35px
+} 
+
+.title span, 
+.title1 span {
+  font-size: 20px;
+}
+
+.nav-bg {
+  background-color: var(--primary);
+}
+
+.primary-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.primary-nav a {
+  display: block;
+  color: var(--white);
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.primary-nav a:hover {
+  background-color: var(--secondary);
+  color: var(--black);
+}
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenido-hero {
+  background-color:var(--black);
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contenido-hero h2, 
+.contenido-hero p {
+color: var(--white);
+text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 600px) {
+  .hero {
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 450px;
+      margin-bottom: 20px;
   }
 }
